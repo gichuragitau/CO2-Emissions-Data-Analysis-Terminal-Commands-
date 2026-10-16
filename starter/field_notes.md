@@ -74,8 +74,9 @@ Next you want to see just the column names by themselves — one per line is
 a lot easier to scan than one long comma-separated row.
 
 ```bash
-# TODO: a command (or combination of commands) that prints just the header
-# row, one column name per line
+head -n 1 co2_emissions_2022.csv
+head  -n 1 co2_emissions_2022.csv | tr ',' '\n'
+
 ```
 
 **Output:**
@@ -89,8 +90,15 @@ row. Column numbers for reference: `country`=1, `iso_code`=2, `year`=3,
 `population`=4, `gdp`=5, `co2`=6.
 
 ```bash
-# TODO: a command that prints the first 6 values from a single column
-# (repeat this for at least 5 of the 6 columns, swapping in each column's number)
+# TODO: 
+cut -d ',' -f 1 co2_emissions_2022.csv | head -n 6 
+a command that prints the first 6 values from a single column
+cut -d ',' -f 1 co2_emissions_2022.csv | head -n 6
+cut -d ',' -f 2 co2_emissions_2022.csv | head -n 6 
+cut -d ',' -f 3 co2_emissions_2022.csv | head -n 6
+cut -d ',' -f 4 co2_emissions_2022.csv | head -n 6
+ -d ',' -f 5 co2_emissions_2022.csv | head -n 6
+ -d ',' -f 6 co2_emissions_2022.csv | head -n 6 
 ```
 
 Fill in the table from what you actually saw — not a guess from the column
