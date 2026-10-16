@@ -76,7 +76,6 @@ a lot easier to scan than one long comma-separated row.
 ```bash
 head -n 1 co2_emissions_2022.csv
 head  -n 1 co2_emissions_2022.csv | tr ',' '\n'
-
 ```
 
 **Output:**
@@ -89,8 +88,7 @@ of just that one column — without scrolling through every field on every
 row. Column numbers for reference: `country`=1, `iso_code`=2, `year`=3,
 `population`=4, `gdp`=5, `co2`=6.
 
-```bash
-# TODO: 
+```bash 
 cut -d ',' -f 1 co2_emissions_2022.csv | head -n 6 
 a command that prints the first 6 values from a single column
 cut -d ',' -f 1 co2_emissions_2022.csv | head -n 6
@@ -117,13 +115,18 @@ and a table? (Not a definition you looked up — explain it the way you'd
 explain it to a friend who's never coded. No command needed for this one,
 just think about the table you just filled in above.)
 
-_TODO_
+```bash
+List Array is a table with a fixed size or slots; where each indivisual section means something or has a purpose for one specific thype of data being there
+Table is a set of data structured by lines and colums with an infinitley that may not be as particular as an array.
+```
 
 ## 4. Structured or unstructured?
 
 State whether this dataset is structured or unstructured, and why.
 
-_TODO_
+```bash
+This dataset is structured but there ia alsot of missing data or missplaced data; this is a structured dataset becasue there is the same data type within each colomn.
+```
 
 ## 5. Before you trust this data
 
