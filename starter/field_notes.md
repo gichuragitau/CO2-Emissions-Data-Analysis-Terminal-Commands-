@@ -113,7 +113,7 @@ name alone:
 **In your own words:** The difference between a lis/array is a list is just a bunch of text on a page that may have a structure to it but is not stuctured for someone to understand. An Array is a list with a set structure.
 
 ```bash
-List Array is a table with a fixed size or slots; where each indivisual section means something or has a purpose for one specific thype of data being there
+_List Array is a table with a fixed size or slots; where each indivisual section means something or has a purpose for one specific thype of data being there.
 Table is a set of data structured by lines and colums with an infinitley that may not be as particular as an array.
 ```
 
