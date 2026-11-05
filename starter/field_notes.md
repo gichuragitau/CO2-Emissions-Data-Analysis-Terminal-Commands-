@@ -104,16 +104,13 @@ name alone:
 
 | Column | Inferred type | How I can tell |
 |---|---|---|
-| Country | string | this is text to defne a country |
-| Iso_code| string | this is a text code to define a country through a registed code |
+| Country | String | this is text to defne a country |
+| Iso_code| String | this is a text code to define a country through a registed code |
 | Year| Date | used to label the specific countries in the data |
 |Population| Integer | there cant be a fraction of a person accounted for in the data |
 | Gdp| float | recorded as a contiunous figure |
 
-**In your own words:** what's the actual difference between a list/array
-and a table? (Not a definition you looked up — explain it the way you'd
-explain it to a friend who's never coded. No command needed for this one,
-just think about the table you just filled in above.)
+**In your own words:** The difference between a lis/array is a list is just a bunch of text on a page that may have a structure to it but is not stuctured for someone to understand. An Array is a list with a set structure.
 
 ```bash
 List Array is a table with a fixed size or slots; where each indivisual section means something or has a purpose for one specific thype of data being there
