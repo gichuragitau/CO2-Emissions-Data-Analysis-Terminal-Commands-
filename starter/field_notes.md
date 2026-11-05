@@ -102,13 +102,13 @@ cut -d ',' -f 6 co2_emissions_2022.csv | head -n 6
 Fill in the table from what you actually saw — not a guess from the column
 name alone:
 
-| Column | Inferred type | How I can tell |
-|---|---|---|
 | Country | String | this is text to defne a country |
-| Iso_code| String | this is a text code to define a country through a registed code |
-| Year| Date | used to label the specific countries in the data |
-|Population| Integer | there cant be a fraction of a person accounted for in the data |
-| Gdp| float | recorded as a contiunous figure |
+|---|---|---|
+| Iso_code | String | this is a text code to define a country through a registed code  |
+| Year | Date | used to label specific countries yearly output in the data|
+| Population | Integer | there cant be a fraction of a person accounted for in the data  |
+|Gdp| Float | recorded as a continuous figure|
+| Co2| Float | recorded as a contiunous figure |
 
 **In your own words:** The difference between a lis/array is a list is just a bunch of text on a page that may have a structure to it but is not stuctured for someone to understand. An Array is a list with a set structure.
 
@@ -135,12 +135,14 @@ You may need more than one command for this — piping (`|`) feeds one
 command's output into the next as input.
 
 ```bash
+cut -d ',' -f 2 co2_emissions_2022.csv
+cut -d ',' -f 2 co2_emissions_2022.csv | tail -n +2 | grep -c '^$'
 # TODO: a command (or combination) that counts how many rows have a
 # BLANK iso_code
 ```
 
 **Output:**
-_TODO_
+_36 rows have a blank iso code_
 
 ```bash
 # TODO: the same idea, but for the gdp column
