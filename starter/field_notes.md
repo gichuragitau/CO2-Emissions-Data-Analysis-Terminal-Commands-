@@ -176,14 +176,14 @@ curious to explore using this data? Pick two specific countries you're
 curious to compare, and look up their full rows.
 
 ```bash
-# TODO: a command that finds a specific country's row by name (repeat for
-# a second country of your choice)
+grep "Mexico" co2_emissions_2022.csv   
+grep "Germany" co2_emissions_2022.csv   
 ```
 
 **Output:**
-_TODO_
+_Row of each column_
 
-**My question:** _TODO_
+**My question:** _Does Population affect GDP or does a Ppoulation Affect Co2 or Is GDP afeccted by co2 and vice versa/_
 
 ## 8. AI-literacy reflection
 
@@ -194,10 +194,10 @@ fact before relying on it professionally — specific enough that you could
 actually follow it, not "I'll be careful."
 
 **Risks:**
-1. _TODO_
-2. _TODO_
+1. _AI Hallucination_
+2. _AI may not have full context_
 
-**My rule:** _TODO_
+**My rule:** _always use AI as a tool to teach you rather than tell you and always give it context._
 
 ## 9. Something that went wrong (and how you figured it out)
 
@@ -208,7 +208,7 @@ this at least once. Paste the actual command and what actually happened
 fix — not "I googled it and it worked."
 
 ```bash
-# TODO: a command that errored, or gave you unexpected results
+cut -d ',' -f 6 co2_emissions_2022.csv
 ```
 
 **What happened:**
