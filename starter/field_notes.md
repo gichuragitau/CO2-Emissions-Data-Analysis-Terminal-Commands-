@@ -135,7 +135,6 @@ You may need more than one command for this — piping (`|`) feeds one
 command's output into the next as input.
 
 ```bash
-cut -d ',' -f 2 co2_emissions_2022.csv
 cut -d ',' -f 2 co2_emissions_2022.csv | tail -n +2 | grep -c '^$'
 # TODO: a command (or combination) that counts how many rows have a
 # BLANK iso_code
