@@ -156,7 +156,8 @@ at least one in the counts you just found.
 1. _7 values are missing from Co2
 25 entries are missing from population
 the rest (country,year) have NO missing values._
-2. _What values are imputted as country but arent?_
+2. _What values are imputted as country but aren't?_
+3._What is the signifignace of the continents?_
 
 ## 6. Data-quality question for the source
 
@@ -165,7 +166,7 @@ phrase it as a real question you'd send to the data's source/maintainer. A
 good test: could they actually answer it with a concrete yes/no or fact —
 not "is this data good?"
 
-_TODO_
+_What values are imputted as country but aren't? And why?_
 
 ## 7. Something you're actually curious about
 
