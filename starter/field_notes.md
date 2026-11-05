@@ -150,14 +150,13 @@ cut -d ',' -f 2 data.csv | tail -n +2 | grep -c '^$'
 
 List **at least 2** specific things you'd want to know about how this
 dataset was collected, before trusting any conclusion drawn from it — ground
-at least one in the counts you just found. 7 values are missing from Co2
-25 entries are missing from population
-the rest (country,year) have NO missing values.
-
+at least one in the counts you just found. 
 
 **My 2 concerns:**
-1. _TODO_
-2. _TODO_
+1. _7 values are missing from Co2
+25 entries are missing from population
+the rest (country,year) have NO missing values._
+2. _What values are imputted as country but arent?_
 
 ## 6. Data-quality question for the source
 
