@@ -49,7 +49,8 @@ this repo up (see `README.md`) — `git init`/clone, creating your
 reconstruct it from memory at the end.
 
 ```bash
-# TODO: the commands you actually ran to set up this repo
+git init/clone
+touch .gitignore
 ```
 
 ## 1. First look at the raw file
@@ -59,14 +60,13 @@ safe peek at it — not the whole 254-row file, just the **first 5 lines**,
 enough to see the shape of it without scrolling past everything.
 
 ```bash
-head -5 co2_emissions_2022.csv 
-please work 
+head -5 co2_emissions_2022.csv  
 ```
 
 **Output:**
-_TODO: paste what you actually got_
+The the header appeared with the first 5 lines. 
 
-**What I notice:** _TODO — your raw observations, in your own words_
+**What I notice:** _Africa is documented twice. Africa is mentioned, but is not a county. there are certain values within row 3 and 4 missing which also coul be pertaining to Africa as a continent._
 
 ## 2. Column names
 
@@ -79,7 +79,7 @@ head  -n 1 co2_emissions_2022.csv | tr ',' '\n'
 ```
 
 **Output:**
-_TODO_
+1st command gave only the header of the file from left to right. While the second command gave the header of the file in a column top to bottom.
 
 ## 3. Column-by-column data type table
 
@@ -95,8 +95,8 @@ cut -d ',' -f 1 co2_emissions_2022.csv | head -n 6
 cut -d ',' -f 2 co2_emissions_2022.csv | head -n 6 
 cut -d ',' -f 3 co2_emissions_2022.csv | head -n 6
 cut -d ',' -f 4 co2_emissions_2022.csv | head -n 6
- -d ',' -f 5 co2_emissions_2022.csv | head -n 6
- -d ',' -f 6 co2_emissions_2022.csv | head -n 6 
+cut -d ',' -f 5 co2_emissions_2022.csv | head -n 6
+cut -d ',' -f 6 co2_emissions_2022.csv | head -n 6 
 ```
 
 Fill in the table from what you actually saw — not a guess from the column
