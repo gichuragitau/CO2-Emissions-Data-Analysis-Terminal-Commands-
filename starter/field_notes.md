@@ -136,23 +136,24 @@ command's output into the next as input.
 
 ```bash
 cut -d ',' -f 2 co2_emissions_2022.csv | tail -n +2 | grep -c '^$'
-# TODO: a command (or combination) that counts how many rows have a
-# BLANK iso_code
 ```
 
 **Output:**
 _36 rows have a blank iso code_
 
 ```bash
-# TODO: the same idea, but for the gdp column
+cut -d ',' -f 2 data.csv | tail -n +2 | grep -c '^$'
 ```
 
 **Output:**
-_TODO_
+89 rows have a missing gdp
 
 List **at least 2** specific things you'd want to know about how this
 dataset was collected, before trusting any conclusion drawn from it — ground
-at least one in the counts you just found.
+at least one in the counts you just found. 7 values are missing from Co2
+25 entries are missing from population
+the rest (country,year) have NO missing values.
+
 
 **My 2 concerns:**
 1. _TODO_
